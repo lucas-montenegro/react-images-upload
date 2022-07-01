@@ -90,6 +90,7 @@ export default function Home(): JSX.Element {
         <CardList cards={formattedData} />
         { hasNextPage === true 
           ? <Button 
+              mt={10}
               onClick={() => fetchNextPage()}
               disabled={!hasNextPage || isFetchingNextPage}
             >
